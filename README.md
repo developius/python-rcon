@@ -3,6 +3,16 @@ python-rcon
 
 Python wrapper for MCRcon (http://github.com/barneygale/MCRcon)
 
+#### Getting set up ####
+
+```python
+from rcon import rcon
+
+server = rcon("localhost","username","password") # connect to server
+
+print(server.list()) # print currently logged in users
+```
+
 functions
 ---------
 ***Note: all results apart from status() are return in JSON format***
