@@ -16,7 +16,7 @@ server = rcon("localhost","username","password") # connect to server
 print(server.list()) # print currently logged in users
 ```
 
-functions
+Functions
 ---------
 ***Note: all results apart from status() are return in JSON format***
 * server.users() - get currently logged in users
