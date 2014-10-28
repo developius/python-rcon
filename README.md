@@ -4,6 +4,8 @@ python-rcon
 Python wrapper for MCRcon (http://github.com/barneygale/MCRcon)
 
 #### Getting set up ####
+```cd /path/to/python-rcon
+sudo python setup.py install```
 
 ```python
 from rcon import rcon
@@ -34,4 +36,3 @@ functions
 * server.op("user") - op "user"
 * server.deop("user") - deop "user"
 * server.stats() - return loads of server stats
-
