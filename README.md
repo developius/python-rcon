@@ -5,6 +5,7 @@ Python wrapper for MCRcon (http://github.com/barneygale/MCRcon)
 
 #### Getting set up ####
 ```cd /path/to/python-rcon
+
 sudo python setup.py install```
 
 ```python
