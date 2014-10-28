@@ -5,31 +5,34 @@ Python wrapper for MCRcon (http://github.com/barneygale/MCRcon)
 
 #### Getting set up ####
 1. Install python-rcon
-```
-git clone http://github.com/xavbabe/python-rcon
-cd python-rcon
-sudo python setup.py install
-```
+
+  ```
+  git clone http://github.com/xavbabe/python-rcon
+  cd python-rcon
+  sudo python setup.py install
+  ```
 2. Install MCRcon (needed for python-rcon)
-```
-cd ../
-git clone http://github.com/barneygale/MCRcon
-cd MCRcon
-wget https://raw.githubusercontent.com/xavbabe/python-rcon/master/setup-MCRcon.py
-sudo python setup-MCRcon.py
-```
+
+  ```
+  cd ../
+  git clone http://github.com/barneygale/MCRcon
+  cd MCRcon
+  wget https://raw.githubusercontent.com/xavbabe/python-rcon/master/setup-MCRcon.py
+  sudo python setup-MCRcon.py
+  ```
 3. Test python-rcon
-```python
-from rcon import rcon
 
-server = rcon("localhost","username","password") # connect to server
-
-print(server.list()) # print currently logged in users
-```
+  ```python
+  from rcon import rcon
+  
+  server = rcon("localhost","username","password") # connect to server
+  
+  print(server.list()) # print currently logged in users
+  ```
 
 Functions
 ---------
-***Note: all results apart from status() are return in JSON format***
+***Note: all results apart from status() are returned in JSON format***
 * server.users() - get currently logged in users
 * server.status() - get current server status - True = up, False = down
 * server.stop() - stop the server
